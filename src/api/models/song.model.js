@@ -40,6 +40,9 @@ const songSchema = new mongoose.Schema({
   },
   releaseDate:{type:Number, requiere:false, trim:true},
   duration:{type:Number, require:false}
+},
+{
+  timestamps:true
 });
 
 

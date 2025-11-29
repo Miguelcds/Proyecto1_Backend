@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt"); // Libreria para ecriptacion
 const userSchema = new mongoose.Schema(
 
     {
-        name:{type: String, trim: true, requiere: true},
+        name:{type: String, trim: true, require: true},
         password:{
             type: String, 
             trim:true, 
@@ -18,13 +18,12 @@ const userSchema = new mongoose.Schema(
             require:true,
             unique:true, // Solo puede existir el e-mail 1 vez
         },
-        profileImgUrl:{type:String,trim:true, require:true, default:"https://res.cloudinary.com/dj5ud5w1i/image/upload/v1763762215/Profile_Default_zzzzbe.jpg"},
+        profileImgUrl:{type:String,trim:true,default:"https://res.cloudinary.com/dj5ud5w1i/image/upload/v1763762215/Profile_Default_zzzzbe.jpg"},
         profileImgId:{type:String, trim:true, require:false},
-        favourites:[{type:mongoose.Types.ObjectId, ref: "Song"}], // 
+        favorites:[{type:mongoose.Types.ObjectId, ref: "Song"}], // 
         role:{type:String, enum:["admin", "user"], default:"user"} // Para Facilitar esta parte: El primer admin se insertará manualmente modificando el documento directamente en MongoAtlas. Podrá tener el rol “admin”
     },
     {
-        timeseries:true,
         timestamps:true
     }
 

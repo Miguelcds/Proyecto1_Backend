@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "seed": "node ./src/utils/###loquesea"
+    "seed": "node ./src/utils/seed/songs.seed.js"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "cloudinary": "^2.8.0",
+    "cloudinary": "^1.41.3",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.20.0",
     "multer": "^2.0.2",
-    "multer-storage-cloudinary": "^2.2.1"
+    "multer-storage-cloudinary": "^4.0.0"
   }
 }
