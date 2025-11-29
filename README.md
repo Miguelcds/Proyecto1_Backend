@@ -86,10 +86,15 @@ npm install
 Crear un archivo .env en la raíz del proyecto:
 
 PORT=3000
+
 DB_URL=mongodb+srv://...
+
 JWT_SECRET=tu_clave_secreta
+
 CLOUDINARY_CLOUD_NAME=
+
 CLOUDINARY_API_KEY=
+
 CLOUDINARY_API_SECRET=
 
 ▶️ Ejecución del Proyecto
