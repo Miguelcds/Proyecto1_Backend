@@ -205,4 +205,4 @@ Eliminación automática de imágenes en Cloudinary al borrar usuarios
 
 👨‍💻 Autor
 
-Desarrollado por el Joao Miguel Costa Da Silva
+Desarrollado por Joao Miguel Costa Da Silva
