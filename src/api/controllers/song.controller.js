@@ -2,7 +2,7 @@
 
 const Song = require("../models/song.model");
 
-// Creacion De peliculas
+// Creacion De Canciones
 
 const createSong = async (req, res, next) => {
   try {
@@ -16,7 +16,7 @@ const createSong = async (req, res, next) => {
   }
 };
 
-// Borrar Peliculas
+// Borrar Cancion
 
 const deleteSong = async (req, res, next) => {
   try {
@@ -31,7 +31,7 @@ const deleteSong = async (req, res, next) => {
   }
 };
 
-// Arrojar Todas Las Peliculas 
+// Arrojar Todas Las Cancioes
 
 const getSongs = async (req, res, next) => {
   try {
@@ -43,7 +43,7 @@ const getSongs = async (req, res, next) => {
 };
 
 
-// Actualizar Peliculas 
+// Actualizar Canciones
 
 const updateSong = async (req, res, next) => {
   try {
