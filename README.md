@@ -70,24 +70,26 @@ El proyecto sigue una arquitectura modular y escalable, ideal para entornos de p
     └── cloudinary/
 ````
 
-⚙️ Instalación y Configuración
+##⚙️ Instalación y Configuración
 
 1. Clonar el repositorio
 
 ```
 git clone <url-del-repositorio>
+```
 
 ```
 cd proyecto-backend
-
+```
 2. Instalar dependencias
-
+```
 npm install
-
+```
 3. Configurar variables de entorno
 
 Crear un archivo .env en la raíz del proyecto:
 
+````
 PORT=3000
 
 DB_URL=mongodb+srv://...
@@ -100,21 +102,31 @@ CLOUDINARY_API_KEY=
 
 CLOUDINARY_API_SECRET=
 
-▶️ Ejecución del Proyecto
+````
+
+## ▶️ Ejecución del Proyecto
 
 - Modo desarrollo
 npm run dev
 
 - Modo producción
+
+```
 npm start
+```
 
 - Ejecutar el Seed (canciones)
+  
+```
 npm run seed
+```
 
 👤 Endpoints de Usuario
+
 POST /api/users/register
 
 - Registra un nuevo usuario.
+
 Admite multipart/form-data para subir imagen de perfil.
 
 POST /api/users/login
@@ -129,15 +141,17 @@ POST /api/users/favourites
 
 Añade favoritos sin duplicados:
 
+```
 {
   "favorites": ["idSong1", "idSong2"]
 }
+```
 
 DELETE /api/users/admin/:id
 
 Elimina un usuario (solo admins).
 
-🎵 Endpoints de Canciones
+##🎵 Endpoints de Canciones
 
 GET /api/songs --> Obtiene todas las canciones.
 
@@ -147,8 +161,10 @@ PATCH /api/songs/:id --> Actualiza una canción.
 
 DELETE /api/songs/:id --> Elimina una canción.
 
-🧱 Modelos Principales
+##🧱 Modelos Principales
+
 User
+```
 {
   name: String,
   email: String,
@@ -158,8 +174,9 @@ User
   favorites: [{ type: ObjectId, ref: "Song" }],
   role: { type: String, default: "user" }
 }
-
+```
 Song
+```
 {
   name: String,
   artist: String,
@@ -167,8 +184,9 @@ Song
   releaseDate: Number,
   duration: Number
 }
+```
 
-☁️ Subida de Imágenes
+## ☁️ Subida de Imágenes
 
 El proyecto utiliza Cloudinary a través de multer-storage-cloudinary, permitiendo:
 
@@ -178,7 +196,7 @@ Eliminar imágenes al borrar un usuario
 
 Reemplazar imágenes al actualizar
 
-🛡️ Seguridad
+## 🛡️ Seguridad
 
 Contraseñas encriptadas con bcrypt
 
@@ -202,10 +220,10 @@ Eliminación automática de imágenes en Cloudinary al borrar usuarios
 
 *** Subire datos sensibles como el .env y el seed por ser un proyecto educativo 
 
-📜 Licencia
+## 📜 Licencia
 
 *** Proyecto de uso educativo ***
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
 Desarrollado por Joao Miguel Costa Da Silva
