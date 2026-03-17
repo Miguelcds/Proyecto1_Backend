@@ -29,7 +29,7 @@ El proyecto sigue una arquitectura modular y escalable, ideal para entornos de p
 - Arquitectura modular y organizada en capas
 
 
-# Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Node.js
 
@@ -70,7 +70,7 @@ El proyecto sigue una arquitectura modular y escalable, ideal para entornos de p
     └── cloudinary/
 ````
 
-##⚙️ Instalación y Configuración
+## ⚙️ Instalación y Configuración
 
 1. Clonar el repositorio
 
