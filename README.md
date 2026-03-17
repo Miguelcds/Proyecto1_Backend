@@ -121,7 +121,7 @@ npm start
 npm run seed
 ```
 
-👤 Endpoints de Usuario
+## 👤 Endpoints de Usuario
 
 POST /api/users/register
 
@@ -206,7 +206,7 @@ Protección de rutas con middlewares
 
 Sanitización de campos sensibles en actualizaciones (no se permite cambiar rol, email o password desde rutas no autorizadas)
 
-🧹 Buenas Prácticas Aplicadas
+## 🧹 Buenas Prácticas Aplicadas
 
 Código modular y desacoplado
 
@@ -218,7 +218,7 @@ Seeds para datos iniciales
 
 Eliminación automática de imágenes en Cloudinary al borrar usuarios
 
-*** Subire datos sensibles como el .env y el seed por ser un proyecto educativo 
+⚠️⚠️⚠️ *** Subire datos sensibles como el .env y el seed por ser un proyecto educativo *** ⚠️⚠️⚠️
 
 ## 📜 Licencia
 
