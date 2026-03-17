@@ -218,8 +218,6 @@ Seeds para datos iniciales
 
 Eliminación automática de imágenes en Cloudinary al borrar usuarios
 
-⚠️⚠️⚠️ *** Subire datos sensibles como el .env y el seed por ser un proyecto educativo *** ⚠️⚠️⚠️
-
 ## 📜 Licencia
 
 *** Proyecto de uso educativo ***
