@@ -8,7 +8,7 @@ Proporciona un sistema completo de gestión de usuarios, autenticación mediante
 El proyecto sigue una arquitectura modular y escalable, ideal para entornos de producción y aprendizaje avanzado.
 
 
-# Características Principales
+## Características Principales
 
 - Sistema de autenticación y autorización (JWT)
 
@@ -49,8 +49,9 @@ El proyecto sigue una arquitectura modular y escalable, ideal para entornos de p
 
 - Nodem
 
-# Estructura 
+## Estructura 
 
+```
 .
 ├── app.js
 ├── package.json
@@ -67,14 +68,16 @@ El proyecto sigue una arquitectura modular y escalable, ideal para entornos de p
     ├── utils/
     │   └── seed/
     └── cloudinary/
-
+````
 
 ⚙️ Instalación y Configuración
 
 1. Clonar el repositorio
 
+```
 git clone <url-del-repositorio>
 
+```
 cd proyecto-backend
 
 2. Instalar dependencias
